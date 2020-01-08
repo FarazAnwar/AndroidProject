@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        android:layout_marginBottom="10sp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="9dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="2dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/mImage"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home clearing"
+                android:layout_toEndOf="@id/mImage"
+                android:layout_alignParentTop="true"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:id="@+id/mtv"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job ID:22333"
+                android:id="@+id/mtv2"
+                android:layout_below="@id/mtv"
+                android:layout_toEndOf="@id/mImage"
+                android:layout_marginStart="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show current date"
+                android:layout_below="@id/mtv2"
+                android:layout_toEndOf="@id/mImage"
+                android:layout_marginTop="20sp"
+                android:textSize="15sp"
+                android:id="@+id/mtv3"
+                android:layout_marginStart="10sp"
+                android:drawableLeft="@drawable/ic_action_date"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show location"
+                android:layout_below="@id/mtv3"
+                android:textSize="15sp"
+                android:id="@+id/mtv4"
+                android:layout_toEndOf="@id/mImage"
+                android:layout_marginStart="10sp"
+                android:drawableLeft="@drawable/ic_action_location"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="click"
+                android:background="#9003F4D8"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/mtv"
+                android:layout_marginStart="55sp"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
